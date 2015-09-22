@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+	<body>
+		<div class = "container">
+			<h4>Summited Information</h4>
+			<b>Name</b>: <%= users.name%> <br>
+			<b>Dojo Location</b>: <%= users.location%><br>
+			<b>Favorite Languages:</b> <%= users.language%><br>
+			<b>Comment</b>: <%= users.comment%> <br><br>
+
+			<h4>Other results</h4>
+			<% for (var i=0; i < info.length;  i++) {%>
+				surveyee <%= i+1%>'s name: <%=info[i].name%><br>
+				surveyee <%= i+1%>'s location: <%=info[i].location%><br>
+				surveyee <%= i+1%>'s language: <%=info[i].language%><br>
+				surveyee <%= i+1%>'s comment: <%=info[i].comment%><br><br>
+
+			<%}%>
+		<form action = "/" method = "get">
+		<input type = "submit" value = "Go Back">
+		</form>
+		</div>
+	</body>
+</html>

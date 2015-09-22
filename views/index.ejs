@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+<body>
+	<div class = "container">
+		<h3>Please fill out the information below: </h3>
+		<form action = "/info" method = "post">
+		Your name: <input type = "text" name = 'name'><br>
+		Dojo Location: <select name = 'location'>
+							<option value = "Mountain View">Mountain View</option>
+							<option value = "Seattle">Seattle</option>
+							<option value = "San Jose">San Jose</option>
+						</select><br>
+		favorite languages: <select name = 'language'>
+							<option value = "Javascript">Javascript</option>
+							<option value = "python">python</option>
+						</select><br>
+		Comment(optional):<br> <textarea name = 'comment'></textarea><br>
+		<input type = "submit" value = "submit"><br>
+		</form>
+	</div>
+</body>
+</html>
